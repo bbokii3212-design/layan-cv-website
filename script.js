@@ -1,9 +1,6 @@
-// When the page is fully loaded, this script will add the current year to the footer.
 document.addEventListener('DOMContentLoaded', function () {
   const year = new Date().getFullYear();
   document.querySelector('footer').innerHTML += `<p>&copy; ${year} Layan Abdullah Alshayban</p>`;
-  
-  // Scroll effect for sections
   const sections = document.querySelectorAll('section');
   
   function showSectionOnScroll() {
