@@ -1,0 +1,98 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #e1f4ff, #c4e7ff); /* تدرجات فاتحة أكثر */
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px; /* إضافة مساحة أسفل المحتوى حتى لا يغطى الفوتر */
+}
+
+header {
+  background-color: #66b3ff;  /* أزرق فاتح */
+  color: white;
+  text-align: center;
+  padding: 30px 20px; /* تقليص المسافة الداخلية */
+  border-bottom: 5px solid #99ccff; /* اللون أفتح */
+}
+
+h1 {
+  font-size: 2.5rem;  /* تقليص حجم النص */
+}
+
+p {
+  font-size: 1rem; /* تقليص حجم النص */
+  margin-top: 10px;
+}
+
+section {
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #66b3ff;  /* أزرق فاتح */
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #66b3ff;  /* أزرق فاتح */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+footer {
+  background-color: #66b3ff;  /* أزرق فاتح */
+  color: white;
+  text-align: center;
+  padding: 10px 20px; /* تقليص المسافة الداخلية */
+  position: relative; /* تغيير من fixed إلى relative */
+  margin-top: 20px; /* إضافة هامش أعلى الفوتر */
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #99ccff; /* لون أفتح من الأزرق */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Hover effects for sections */
+section:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Scroll effect */
+section {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+}
