@@ -15,9 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   window.addEventListener('scroll', showSectionOnScroll);
-  showSectionOnScroll(); // To trigger on page load
-  
-  // Contact Form Toggle
+  showSectionOnScroll();
   document.getElementById('contactBtn').addEventListener('click', function () {
     const contactForm = document.getElementById('contactForm');
     contactForm.style.display = contactForm.style.display === 'none' ? 'block' : 'none';
